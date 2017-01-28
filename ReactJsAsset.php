@@ -16,7 +16,17 @@ class ReactJsAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->js[] = YII_ENV_DEV ? 'react.js':'react.min.js';
+        if (YII_ENV_DEV) {
+            $this->js = [
+                'react.js',
+                'react-dom.js'
+            ];
+        } else {
+            $this->js = [
+                'react.min.js',
+                'react-dom.min.js'
+            ];
+        }
     }
     public $depends = [
         'yii\web\YiiAsset',
