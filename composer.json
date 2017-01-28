@@ -1,0 +1,23 @@
+{
+    "name": "prawee/yii2-reactjs",
+    "description": "React javascript library for Yii2",
+    "type": "yii2-library",
+    "keywords" : ["yii2","library","react","reactjs"],
+    "license": "MIT",
+    "homepage": "https://github.com/prawee/yii2-reactjs",
+    "authors": [
+        {
+            "name": "Prawee Wongsa",
+            "email": "konkeanweb@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.10",
+        "bower-asset/react": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "prawee\\reactjs\\": ""
+        }
+    }
+}
