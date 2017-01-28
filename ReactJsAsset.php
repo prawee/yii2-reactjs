@@ -12,11 +12,11 @@ use yii\web\AssetBundle;
 
 class ReactJsAsset extends AssetBundle
 {
-    public $sourcePath = '@bower';
+    public $sourcePath = '@bower/react';
     public function init()
     {
         parent::init();
-        $this->js[] = YII_ENV_DEV ? '':'';
+        $this->js[] = YII_ENV_DEV ? 'react.js':'react.min.js';
     }
     public $depends = [
         'yii\web\YiiAsset',
