@@ -19,7 +19,7 @@ class ReactJsAsset extends AssetBundle
         if (YII_ENV_DEV) {
             $this->js = [
                 'react.development.js',
-                'react-dom.js'
+                'react-dom.development.js'
             ];
         } else {
             $this->js = [
