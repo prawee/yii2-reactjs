@@ -18,13 +18,13 @@ class ReactJsAsset extends AssetBundle
         parent::init();
         if (YII_ENV_DEV) {
             $this->js = [
-                'react.js',
-                'react-dom.js'
+                'react.development.js',
+                'react-dom.development.js'
             ];
         } else {
             $this->js = [
-                'react.min.js',
-                'react-dom.min.js'
+                'react.production.min.js',
+                'react-dom.production.min.js'
             ];
         }
     }
